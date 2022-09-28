@@ -1,9 +1,11 @@
-*{
-    padding: 0;margin: 0;box-sizing: border-box;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-header{
+header {
     background-color: rgb(33, 23, 62);
 }
 
@@ -18,17 +20,17 @@ header{
     color: white;
 }
 
-.header img{
+.header img {
     width: 140px;
     border: 3px solid rgb(202, 202, 202);
     border-radius: 50%;
 }
 
-.header h1{
+.header h1 {
     font-size: 1.6rem;
 }
 
-.header h2{
+.header h2 {
     color: rgb(184, 184, 184);
     font-size: 1.1rem;
     text-align: end;
@@ -39,9 +41,9 @@ main {
     margin: auto;
     padding: 10px;
     display: grid;
-    grid-template-areas: 
-    "f f d"
-    "e e d";
+    grid-template-areas:
+        "f f d"
+        "e e d";
     gap: 5px;
 }
 
@@ -57,24 +59,24 @@ main {
     color: rgb(118, 118, 118);
 }
 
-.formacion__dato{
+.formacion__dato {
     padding: 10px;
     border-bottom: 1px solid rgb(235, 235, 235);
     height: 14vh;
 }
 
-.formacion__datocc{
+.formacion__datocc {
     display: flex;
     padding: 10px;
     border-bottom: 1px solid rgb(235, 235, 235);
     min-height: 14vh;
 }
 
-.formacion__datocc div{
+.formacion__datocc div {
     width: 90%;
 }
 
-.formacion__datocc button{
+.formacion__datocc button {
     background: none;
     border: none;
     width: 85px;
@@ -97,7 +99,7 @@ main {
     width: 50%;
     top: 12vh;
     left: 25%;
-    display: none ;
+    display: none;
 }
 
 .dBlock {
@@ -108,7 +110,7 @@ main {
     width: 100%;
 }
 
-.certificado button{
+.certificado button {
     display: block;
     position: absolute;
     right: 10px;
@@ -128,12 +130,12 @@ main {
     right: 40px;
 }
 
-#verCertBtnDW a{
+#verCertBtnDW a {
     color: white;
     text-decoration: none;
 }
 
-#verCertBtnDW a:hover{
+#verCertBtnDW a:hover {
     color: black;
 }
 
@@ -145,16 +147,16 @@ main {
     right: 40px;
 }
 
-#verCertBtnBE a{
+#verCertBtnBE a {
     color: white;
     text-decoration: none;
 }
 
-#verCertBtnBE a:hover{
+#verCertBtnBE a:hover {
     color: black;
 }
 
-.certificado button:hover{
+.certificado button:hover {
     background-color: white;
     border-radius: 50%;
     color: black;
@@ -168,7 +170,9 @@ main {
     padding: 25px;
 }
 
-.experiencia h2,h3,p {
+.experiencia h2,
+h3,
+p {
     margin: 1vh 0;
 }
 
@@ -178,8 +182,14 @@ main {
 
 /*---------------------------------DATOS */
 
-.datos{
+.datosContainer {
     grid-area: d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.datos {
     border-left: 1px double rgb(244, 244, 244);
     padding: 5vh 0;
     display: flex;
@@ -187,7 +197,7 @@ main {
     align-items: center;
 }
 
-.datos span{
+.datos span {
     display: inline;
     margin: 3px auto;
     font-weight: bolder;
@@ -195,20 +205,20 @@ main {
     color: grey;
 }
 
-.datos span i{
+.datos span i {
     font-size: 1.7rem;
 }
 
-.datos span a{
+.datos span a {
     color: grey;
     text-decoration: none;
 }
 
-.datos span a:hover{
+.datos span a:hover {
     color: black;
 }
 
-.badge-base  {
+.badge-base {
     width: 100px !important;
 }
 
@@ -222,11 +232,14 @@ main {
     margin: 6vh 0;
 }
 
-#form Label,input, textarea{
+#form Label,
+input,
+textarea {
     margin: 1vh 0;
 }
 
-#form input, textarea {
+#form input,
+textarea {
     border: 1px solid rgb(213, 213, 213);
     padding: 2px;
 }
@@ -234,6 +247,7 @@ main {
 textarea {
     resize: none;
 }
+
 /* ---------------------------------HABILIDADES */
 .habilidades {
     padding: 25px;
@@ -247,33 +261,33 @@ textarea {
     margin: 1vh auto;
 }
 
-.habilidades h2{
+.habilidades h2 {
     display: inline-block;
     margin: 0 5%;
 }
 
-.habilidades i{
+.habilidades i {
     font-size: 2.5rem;
     color: rgb(33, 23, 62);
 }
 
 /*---------------------------------PORTFOLIO*/
-.portfolio{
+.portfolio {
     width: 100%;
     min-height: 80vh;
     background-color: rgb(33, 23, 62);
-    padding: 15px;
+    padding: 15x;
     margin-top: 3vh;
 
 }
 
-.portfolio h2{
+.portfolio h2 {
     color: white;
     text-align: center;
     margin-bottom: 2vh;
 }
 
-.portfolioContainer{
+.portfolioContainer {
     display: flex;
     justify-content: space-around;
     width: 80%;
@@ -291,13 +305,135 @@ textarea {
     transform-style: preserve-3d;
 }
 
-.portfolioCard:hover{
+.portfolioCard:hover {
     cursor: pointer;
     /* transform: rotateY(180deg); */
 }
 
-.portfolioCard img{
+.portfolioCard img {
     width: 100%;
     height: 100%;
 }
 
+
+/* ---------------------------------- MEDIA QUERIES*/
+@media screen and (max-width: 1024px) {
+    main {
+        width: 95%;
+        grid-template-areas:
+            "f f f"
+            "e e e"
+            "d d d";
+    }
+
+    .datosContainer {
+        width: 95%;
+        flex-direction: row;
+    }
+
+    .datos {
+        width: 45%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .portfolioContainer {
+        width: 95%;
+    }
+
+    .portfolioCard {
+        height: 35vh;
+    }
+
+    #form {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #form {
+        width: 400px;
+    }
+
+    .portfolio {
+        padding: 4px;
+    }
+
+    .portfolioCard {
+        height: 27vh;
+    }
+
+    .portfolio {
+        min-height: 40vh;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+        margin: 0;
+    }
+
+    .header h1 {
+        font-size: 1rem;
+    }
+
+    .header h2 {
+        font-size: .9rem;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .formacion,
+    .experiencia {
+        width: 100%;
+        margin: 0;
+    }
+
+    .formacion__dato,
+    .formacion__datocc {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .datosContainer {
+        flex-direction: column;
+    }
+
+    #form {
+        width: 80%;
+    }
+
+    .habilidades {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .portfolioContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolioCard {
+        margin: 10px 0;
+        width: 80%;
+    }
+
+    .datos {
+        border: none;
+    }
+}
