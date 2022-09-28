@@ -1,0 +1,303 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: rgb(33, 23, 62);
+}
+
+.header {
+    display: flex;
+    align-items: flex-end;
+    width: 80%;
+    justify-content: space-around;
+    margin: auto;
+    padding: 4vh 0;
+
+    color: white;
+}
+
+.header img{
+    width: 140px;
+    border: 3px solid rgb(202, 202, 202);
+    border-radius: 50%;
+}
+
+.header h1{
+    font-size: 1.6rem;
+}
+
+.header h2{
+    color: rgb(184, 184, 184);
+    font-size: 1.1rem;
+    text-align: end;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-areas: 
+    "f f d"
+    "e e d";
+    gap: 5px;
+}
+
+/*---------------------------------------FORMACIÓN*/
+
+.formacion {
+    grid-area: f;
+    margin: 2vh 2%;
+    position: relative;
+}
+
+.formacionLugar {
+    color: rgb(118, 118, 118);
+}
+
+.formacion__dato{
+    padding: 10px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    height: 14vh;
+}
+
+.formacion__datocc{
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    min-height: 14vh;
+}
+
+.formacion__datocc div{
+    width: 90%;
+}
+
+.formacion__datocc button{
+    background: none;
+    border: none;
+    width: 85px;
+    overflow: hidden;
+}
+
+.formacion__datocc button img {
+    width: 85px;
+    filter: grayscale(1);
+}
+
+.formacion__datocc button img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+
+.certificado {
+    position: absolute;
+    width: 50%;
+    top: 12vh;
+    left: 25%;
+    display: none ;
+}
+
+.dBlock {
+    display: inline-block;
+}
+
+.certificado img {
+    width: 100%;
+}
+
+.certificado button{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    padding: 2px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: white;
+}
+
+#cerrarCertBtnDW {
+    right: 15px;
+}
+
+#verCertBtnDW {
+    right: 40px;
+}
+
+#verCertBtnDW a{
+    color: white;
+    text-decoration: none;
+}
+
+#verCertBtnDW a:hover{
+    color: black;
+}
+
+#cerrarCertBtnBE {
+    right: 15px;
+}
+
+#verCertBtnBE {
+    right: 40px;
+}
+
+#verCertBtnBE a{
+    color: white;
+    text-decoration: none;
+}
+
+#verCertBtnBE a:hover{
+    color: black;
+}
+
+.certificado button:hover{
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+}
+
+/*---------------------------------EXPERIENCIA */
+
+.experiencia {
+    grid-area: e;
+    background-color: rgb(226, 252, 253);
+    padding: 25px;
+}
+
+.experiencia h2,h3,p {
+    margin: 1vh 0;
+}
+
+.fecha {
+    color: gray;
+}
+
+/*---------------------------------DATOS */
+
+.datos{
+    grid-area: d;
+    border-left: 1px double rgb(244, 244, 244);
+    padding: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.datos span{
+    display: inline;
+    margin: 3px auto;
+    font-weight: bolder;
+    line-height: 1;
+    color: grey;
+}
+
+.datos span i{
+    font-size: 1.7rem;
+}
+
+.datos span a{
+    color: grey;
+    text-decoration: none;
+}
+
+.datos span a:hover{
+    color: black;
+}
+
+.badge-base  {
+    width: 100px !important;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: rgb(249, 249, 249);
+    padding: 10px;
+    border-radius: 5%;
+    margin: 6vh 0;
+}
+
+#form Label,input, textarea{
+    margin: 1vh 0;
+}
+
+#form input, textarea {
+    border: 1px solid rgb(213, 213, 213);
+    padding: 2px;
+}
+
+textarea {
+    resize: none;
+}
+/* ---------------------------------HABILIDADES */
+.habilidades {
+    padding: 25px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(243, 243, 243); */
+    border: 1px solid rgb(227, 227, 227);
+    /* border-radius: 5%; */
+    margin: 1vh auto;
+}
+
+.habilidades h2{
+    display: inline-block;
+    margin: 0 5%;
+}
+
+.habilidades i{
+    font-size: 2.5rem;
+    color: rgb(33, 23, 62);
+}
+
+/*---------------------------------PORTFOLIO*/
+.portfolio{
+    width: 100%;
+    min-height: 80vh;
+    background-color: rgb(33, 23, 62);
+    padding: 15px;
+    margin-top: 3vh;
+
+}
+
+.portfolio h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.portfolioContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.portfolioCard {
+    width: 48%;
+    height: 40vh;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    border: 3px solid white;
+    transition: all 0.8s;
+    transform-style: preserve-3d;
+}
+
+.portfolioCard:hover{
+    cursor: pointer;
+    /* transform: rotateY(180deg); */
+}
+
+.portfolioCard img{
+    width: 100%;
+    height: 100%;
+}
+
