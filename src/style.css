@@ -156,6 +156,23 @@ main {
     color: black;
 }
 
+#cerrarCertBtnRJ {
+    right: 15px;
+}
+
+#verCertBtnRJ {
+    right: 40px;
+}
+
+#verCertBtnRJ a {
+    color: white;
+    text-decoration: none;
+}
+
+#verCertBtnRJ a:hover {
+    color: black;
+}
+
 .certificado button:hover {
     background-color: white;
     border-radius: 50%;
